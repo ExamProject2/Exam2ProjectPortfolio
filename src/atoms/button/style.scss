@@ -1,0 +1,24 @@
+.AppButton{
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: row;
+  height:40px;
+  width: fit-content;
+  padding:8px 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #2B2B2B;
+}
+.orange{
+  background-color:#FFB400
+}
+.transparent{
+  background-color: transparent;
+}
