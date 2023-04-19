@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-      <Button title='dojkdcnk'></Button>
+      <Button title='order now'></Button>
   );
 }
 
