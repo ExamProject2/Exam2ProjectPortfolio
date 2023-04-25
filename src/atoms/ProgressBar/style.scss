@@ -1,0 +1,44 @@
+@import '../../colors';
+
+.AppProgressBar{
+  //border:;
+  width:100%;
+  &.SizeSmall{}
+  &.SizeMedium{}
+  &.SizeLarge{}
+  &.DynamicSize{}
+  &.BorderSize{}
+  &.BorderSizeNone{
+    border: none;
+  }
+  &.BorderColorNone{
+    border-color: transparent;
+  }
+  &.BorderColorWhite{
+    border-color: $white;
+  }
+  &.BorderColorOrange{
+    border-color: $orange;
+  }
+  &.BarColorOrange{
+    background-color: $orange;
+  }
+  &.BarColorWhite{
+    background-color: $white;
+  }
+  &.BarColorNone{
+    background-color: transparent;
+  }
+
+  &.AppProgress{
+    &.ProgressColorNone{
+      background-color: transparent;
+    }
+    &.ProgressColorWhite{
+      background-color: $white;
+    }
+    &.ProgressColorOrange{
+      background-color: $orange;
+    }
+  }
+}

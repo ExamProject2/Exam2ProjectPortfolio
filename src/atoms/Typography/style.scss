@@ -1,0 +1,54 @@
+@import '../../colors';
+.AppTypography{
+  font-family: 'Inter';
+  font-style: normal;
+  &.SizeTitle1{
+    font-size: 48px;
+  }
+  &.SizeTitle2{
+    font-size: 32px;
+  }
+  &.SizeTitle3{
+    font-size: 16px;
+  }
+  &.FontWeightBody1{
+    font-weight: 700;
+}
+  &.FontWeightBody2{
+    font-weight: 400;
+  }
+  &.TextColorOrange{
+    color:$orange;
+  }
+  &.TextColorBlack{
+    color:$black;
+  }
+  &.TextColorLightGrey{
+    color:$lightGrey;
+  }
+  &.TextColorDarkGrey{
+    color:$darkGrey;
+  }
+  &.NoFilling{
+    background:none;
+  }
+  &.FillingOrange{
+    background-color: $orange;
+  }
+  &.FillingBlack{
+    background-color: $black;
+  }
+  &.FillingGrey{
+    background-color: $grey;
+  }
+  &.TextCaseLower{
+    text-transform: lowercase;
+  }
+  &.TextCaseNormal{
+    text-transform: none;
+  }
+  &.TextCaseUpper{
+    text-transform: uppercase;
+  }
+}
+

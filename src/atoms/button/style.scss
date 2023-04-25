@@ -1,4 +1,4 @@
-@import 'colors';
+@import '../../colors';
 .AppButton{
   display:flex;
   justify-content: center;
@@ -38,7 +38,7 @@
     border-radius: 5px;
   }
   &.BorderRadiusBig {
-
+    border-radius: 30px;
   }
   &.SizeSmall {
     height: 40px;
