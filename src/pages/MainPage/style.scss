@@ -1,0 +1,30 @@
+.MainPageDiv{
+  width:100vw;
+  min-height:100vh;
+  padding-right:108px;
+  padding-left:305px;
+
+  .LeftSidebar{
+    position:fixed;
+    height:100vh;
+    width:305px;
+    top:0;
+    left:0;
+    background-color: black;
+  }
+
+  .RightSidebar{
+    position:fixed;
+    height:100vh;
+    width:108px;
+    top:0;
+    background-color: black;
+    right:0;
+    left:auto;
+  }
+
+  main{
+    padding-right:28px;
+    padding-left:28px;
+  }
+}

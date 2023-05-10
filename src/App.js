@@ -1,10 +1,15 @@
 import React from "react";
 import Button from "./atoms/button";
+import MainPage from "./pages/MainPage";
+import axios from "axios";
+import {AppContext} from "./context/app";
 import './App.css';
 
 function App() {
-  return (
-      <Button title='order now'></Button>
+    return(
+        <AppContext>
+            <MainPage/>
+        </AppContext>
   );
 }
 

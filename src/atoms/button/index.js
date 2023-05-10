@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './style.scss';
 import cn from 'classnames';
 function Button (props){
-    const {backgrndColor, textColor, shadow, borderRadius, border, title, icon, size} = props;
+    const {backgrndColor, textColor, shadow, borderRadius, border, title, icon, size, ...baseProps} = props;
 
     return (
         <button className={cn('AppButton', {
@@ -18,7 +18,8 @@ function Button (props){
             'SizeSmall': size === 'small',
             'SizeMedium': size === 'medium',
             'SizeBig': size === 'big',
-        })}> {title} </button>
+        })}
+                {...baseProps}> {title} </button>
 )
 }
 

@@ -11,6 +11,7 @@ function Paper (props){
     )
 }
 
-Paper.Proptypes = {
+Paper.propTypes = {
     color: PropTypes.oneOf(['white']),
 }
+export default Paper;
