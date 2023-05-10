@@ -1,4 +1,5 @@
 import axios from "axios";
+import EventLog from "../types/EventLog";
 
 export function eventLoggerService(){
     setInterval(() => {
@@ -10,7 +11,6 @@ export function eventLoggerService(){
             .then(function (response) {
                 // handle success
                 console.log(response);
-                alert('Get method');
             })
             .catch(function (error) {
                 // handle error
