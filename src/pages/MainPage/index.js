@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import './style.scss';
 import cn from 'classnames';
 import Paper from "../../atoms/Paper";
+import RightSidebar from "../../atoms/rightSidebar";
 import Button from "../../atoms/button";
 import axios from "axios";
 
@@ -147,7 +148,7 @@ function MainPage(){
             <Button onClick={onPostButtonClickHw} title='order now'></Button>
             <Button onClick={onDeleteButtonClick} title='order now'></Button>
         </main>
-        <div className='RightSidebar'></div>
+        <RightSidebar/>
         </div>
     )
 }

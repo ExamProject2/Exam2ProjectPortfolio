@@ -9,6 +9,7 @@ export const AppContext = createContext({
 function AppContextProvider (props) {
     const [eventList, setEventList] = useState([]);
     useEffect(() => {
+        document.querySelector('body').addEventListener('click', clickHandler);
         setInterval(() => {
                 setEventList((prevEventList) => {
                     axios.post('http://localhost:8001/hw/event-log', prevEventList)
@@ -30,11 +31,12 @@ function AppContextProvider (props) {
     }, []);
     const clickHandler = (event) => {
         setEventList((prevState) =>{
-            return [...prevState,  new EventLog('button', 'click')];
+            console.log('prevState', prevState);
+            return [...prevState,  new EventLog(`${event.target.localName}.${[...event.target.classList].join('.')}`, 'click')];
         })
-        console.log(event);
+        console.log('event', event);
     }
-    document.addEventListener('click', clickHandler);
+
     return (
         <AppContext.Provider value={{ }}>
             {props.children}
