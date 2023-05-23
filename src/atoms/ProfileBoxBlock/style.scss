@@ -1,0 +1,25 @@
+@import '../../colors';
+.ProfileBoxBlock{
+  display:flex;
+  position:relative;
+  width:100%;
+  flex-direction: column;
+
+  .SocialMedias{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+    .SocialMedCircle{
+      background-color: $orange;
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height:24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+}

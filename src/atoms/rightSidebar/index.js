@@ -34,7 +34,6 @@ function RightSidebar(){
                 <div className='Circle'><ContactIcon/></div>
             </div>
         </div>
-
     )
 }
 

@@ -46,3 +46,4 @@ ProgressBar.defaultProps={
     progressColor: 'orange',
 }
 
+export default ProgressBar;

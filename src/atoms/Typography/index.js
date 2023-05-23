@@ -4,12 +4,12 @@ import './style.scss';
 import cn from 'classnames';
 function Typography (props){
     const {variant, color, filling, textCase} = props;
-
     return (
         <p className={cn('AppTypography', {
         'SizeTitle1': variant === 'title1',
         'SizeTitle2': variant === 'title2',
         'SizeTitle3': variant === 'title3',
+        'SizeTitle4': variant === 'title4',
         'FontWeightBody1': variant === 'body1',
         'FontWeightBody2': variant === 'body2',
         'TextColorOrange': color === 'orange',
@@ -23,7 +23,7 @@ function Typography (props){
         'TextCaseLower': textCase === 'lower',
         'TextCaseNormal': textCase === 'normal',
         'TextCaseUpper': textCase === 'upper',
-        })}></p>
+        })}>{props.children}</p>
     )}
 
 Typography.propTypes = {
@@ -38,3 +38,5 @@ Typography.defaultProps = {
     filling:'none',
     textCase:'normal',
 }
+
+export default Typography;

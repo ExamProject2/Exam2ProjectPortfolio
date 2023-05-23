@@ -1,0 +1,10 @@
+@import '../../colors';
+.LeftSidebarDiv{
+  position:fixed;
+  height:100vh;
+  width:305px;
+  top:0;
+  left:0;
+  background-color: $white;
+  padding:0 40px;
+}

@@ -12,7 +12,7 @@ function AppContextProvider (props) {
         document.querySelector('body').addEventListener('click', clickHandler);
         setInterval(() => {
                 setEventList((prevEventList) => {
-                    axios.post('http://localhost:8001/hw/event-log', prevEventList)
+                    axios.post('http://localhost:8001/hw/file/get-as-array', prevEventList)
                         .then(function (response) {
                             // handle success
                             console.log(response);

@@ -6,6 +6,7 @@ import Paper from "../../atoms/Paper";
 import RightSidebar from "../../atoms/rightSidebar";
 import Button from "../../atoms/button";
 import axios from "axios";
+import LeftSidebar from "../leftSidebar";
 
 class EventLog {
     constructor(target, eventType) {
@@ -142,7 +143,7 @@ function MainPage(){
             });
     };
     return(<div className='MainPageDiv'>
-        <div className='LeftSidebar'></div>
+        <LeftSidebar/>
         <main>
             <Button onClick={onGetButtonClickHw} title='log test'></Button>
             <Button onClick={onPostButtonClickHw} title='order now'></Button>
