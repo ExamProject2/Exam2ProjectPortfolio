@@ -7,6 +7,7 @@ import RightSidebar from "../../atoms/rightSidebar";
 import Button from "../../atoms/button";
 import axios from "axios";
 import LeftSidebar from "../leftSidebar";
+import MainMenu from "../../ molecules/MainMenu";
 
 class EventLog {
     constructor(target, eventType) {
@@ -145,9 +146,7 @@ function MainPage(){
     return(<div className='MainPageDiv'>
         <LeftSidebar/>
         <main>
-            <Button onClick={onGetButtonClickHw} title='log test'></Button>
-            <Button onClick={onPostButtonClickHw} title='order now'></Button>
-            <Button onClick={onDeleteButtonClick} title='order now'></Button>
+            <MainMenu></MainMenu>
         </main>
         <RightSidebar/>
         </div>

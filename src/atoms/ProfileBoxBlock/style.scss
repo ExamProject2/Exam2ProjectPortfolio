@@ -1,9 +1,15 @@
 @import '../../colors';
 .ProfileBoxBlock{
   display:flex;
+  align-items: center;
   position:relative;
   width:100%;
   flex-direction: column;
+  gap:15px;
+
+  .ImgDiv{
+    padding-bottom: 15px;
+  }
 
   .SocialMedias{
     width:100%;

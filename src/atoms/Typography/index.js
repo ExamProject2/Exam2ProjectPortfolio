@@ -3,15 +3,17 @@ import PropTypes from "prop-types";
 import './style.scss';
 import cn from 'classnames';
 function Typography (props){
-    const {variant, color, filling, textCase} = props;
+    const {variant, color, filling, textCase, fontWeight} = props;
     return (
         <p className={cn('AppTypography', {
         'SizeTitle1': variant === 'title1',
         'SizeTitle2': variant === 'title2',
         'SizeTitle3': variant === 'title3',
         'SizeTitle4': variant === 'title4',
-        'FontWeightBody1': variant === 'body1',
-        'FontWeightBody2': variant === 'body2',
+        'FontWeightBody1': fontWeight === 'body1',
+        'FontWeightBody2': fontWeight === 'body2',
+        'FontWeightBody3': fontWeight === 'body3',
+        'FontWeightBody4': fontWeight === 'body4',
         'TextColorOrange': color === 'orange',
         'TextColorBlack': color === 'black',
         'TextColorLightGrey': color === 'lightGrey',
@@ -27,6 +29,7 @@ function Typography (props){
     )}
 
 Typography.propTypes = {
+    fontWeight:PropTypes.string,
     variant: PropTypes.string,
     color: PropTypes.oneOf(['orange', 'black', 'lightGrey', 'darkGrey']),
     filling: PropTypes.oneOf(['none', 'orange', 'grey', 'black']),
@@ -37,6 +40,7 @@ Typography.defaultProps = {
     color:'lightGrey',
     filling:'none',
     textCase:'normal',
+    fontWeight:'body3',
 }
 
 export default Typography;

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './style.scss';
 import cn from 'classnames';
 function Button (props){
-    const {backgrndColor, textColor, shadow, borderRadius, border, title, icon, size, ...baseProps} = props;
+    const {backgrndColor, textColor, shadow, borderRadius, border, title, icon, size, ...baseProps } = props;
 
     return (
         <button className={cn('AppButton', {

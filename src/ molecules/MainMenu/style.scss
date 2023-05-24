@@ -1,0 +1,21 @@
+@import '../../colors';
+.MainMenuDiv{
+  display:flex;
+  justify-content: space-evenly;
+  height:470px;
+  width:auto;
+  background-color: $white;
+
+  .MainTitleDiv{
+    padding: 90px 410px 60px 256px;
+  }
+
+  .MainTitleDiv2{
+    display:flex;
+    justify-content: normal;
+    gap:15px;
+}
+  .YourPhotoDiv{
+    padding:0 60px 600px 0;
+  }
+}

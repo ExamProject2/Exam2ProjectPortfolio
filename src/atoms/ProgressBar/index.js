@@ -19,12 +19,16 @@ function ProgressBar(props){
             'SizeLarge': size === 'large',
             'BorderColorWhite': borderColor === 'white',
             'BorderColorOrange': borderColor === 'orange',
-            'BarColorOrange': barColor === 'orange',
-            'BarColorWhite': barColor === 'white',
+
         })} style={appProgressBar}>
             <div className={cn('AppProgress', {
                 'ProgressColorWhite': progressColor === 'white',
                 'ProgressColorOrange': progressColor === 'orange',
+                'BarColorOrange': barColor === 'orange',
+                'BarColorWhite': barColor === 'white',
+                'SizeSmall': size === 'small',
+                'SizeMedium': size === 'medium',
+                'SizeLarge': size === 'large',
             })} style={{width: `${progress}%`}}>
             </div>
         </div>
@@ -40,6 +44,7 @@ ProgressBar.propTypes = {
     barColor: PropTypes.oneOf(['none', 'white', 'orange']),
 }
 ProgressBar.defaultProps={
+    size:'small',
     borderSize: null,
     progress: 0,
     borderColor: 'orange',

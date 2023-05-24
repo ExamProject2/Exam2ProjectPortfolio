@@ -3,11 +3,23 @@
 .AppProgressBar{
   //border:;
   width:100%;
-  &.SizeSmall{}
-  &.SizeMedium{}
-  &.SizeLarge{}
+  padding:1px;
+  border:1px solid $black;
+  border-radius: 2px;
+
+  &.SizeSmall{
+    height: 6px;
+  }
+  &.SizeMedium{
+    height: 8px;
+  }
+  &.SizeLarge{
+    height: 12px;
+  }
   &.DynamicSize{}
-  &.BorderSize{}
+  &.BorderSize{
+
+  }
   &.BorderSizeNone{
     border: none;
   }
@@ -30,7 +42,19 @@
     background-color: transparent;
   }
 
-  &.AppProgress{
+  .AppProgress{
+    border-radius: 1px;
+    height:2px;
+
+    &.SizeSmall{
+      height: 2px;
+    }
+    &.SizeMedium{
+      height: 6px;
+    }
+    &.SizeLarge{
+      height: 10px;
+    }
     &.ProgressColorNone{
       background-color: transparent;
     }
