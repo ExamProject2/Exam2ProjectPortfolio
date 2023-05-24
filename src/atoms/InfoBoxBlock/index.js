@@ -9,13 +9,13 @@ function InfoBoxBlock(){
 
     return(
         <LeftSidebarBlock className='InfoBoxBlockDiv'>
-            <div>
+            <div className='InfoTitleDiv'>
                 <Typography filling='orange' color='black' variant='title3'>Age:</Typography>
                 <Typography filling='orange' color='black' variant='title3'>Residence:</Typography>
                 <Typography filling='orange' color='black' variant='title3'>Freelance:</Typography>
                 <Typography filling='orange' color='black' variant='title3'>Address:</Typography>
             </div>
-            <div>
+            <div className='FillingDiv'>
                 <Typography variant='title3' color='black'>17</Typography>
                 <Typography variant='title3' color='black'>BD</Typography>
                 <Typography variant='title3' color='black'>Available</Typography>

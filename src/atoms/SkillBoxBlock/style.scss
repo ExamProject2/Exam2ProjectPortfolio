@@ -1,0 +1,11 @@
+.SkillBoxBlock{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+
+  .SkillDiv{
+    display:flex;
+    justify-content: space-between;
+  }
+}
+
