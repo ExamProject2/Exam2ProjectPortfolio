@@ -11,7 +11,7 @@ const languages = {
     title:'Languages',
     list:[{
         title:'English',
-        percent:55,
+        percent:60,
     }, {
         title:'Ukrainian',
         percent:100,
@@ -25,32 +25,32 @@ const skills = {
     title:'Skills',
     list:[{
         title:'Html',
-        percent:55,
+        percent:80,
     }, {
         title:'CSS',
-        percent:100,
+        percent:80,
     },{
         title:'JS',
-        percent:15,
+        percent:55,
     },
     {
         title:'React',
-        percent:15,
+        percent:60,
     },
     {
         title:'Node.js',
-        percent:15,
+        percent:30,
     },
     ]
 }
 const extraSkills = {
     title:'Extra Skills',
     list:[{
-        title:'Bootstrap, Materialize',
+        title:'Bootstrap',
     }, {
-        title:'Stylus, Sass, Less',
+        title:'Sass',
     },{
-        title:'Gulp, Webpack, Grunt',
+        title:'Figma',
     },
         {
             title:'GIT Knowledge',

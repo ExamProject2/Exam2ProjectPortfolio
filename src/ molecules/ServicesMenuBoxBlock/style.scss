@@ -1,0 +1,12 @@
+@import '../../colors';
+.ServicesMenuBoxBlock{
+  background-color: $white;
+  width:310px;
+  height:225px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+}

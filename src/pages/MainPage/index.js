@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import './style.scss';
 import cn from 'classnames';
 import Paper from "../../atoms/Paper";
-import RightSidebar from "../../atoms/rightSidebar";
+import RightSidebar from "../../atoms/RightSidebar";
 import Button from "../../atoms/button";
 import axios from "axios";
 import LeftSidebar from "../leftSidebar";
 import MainMenu from "../../ molecules/MainMenu";
+import ServicesMenuBlock from "../../ molecules/MainPageBlock/ServicesMenuBlock";
+import './style.scss';
 
 class EventLog {
     constructor(target, eventType) {
@@ -143,10 +144,13 @@ function MainPage(){
                 // always executed
             });
     };
+
+
     return(<div className='MainPageDiv'>
         <LeftSidebar/>
         <main>
-            <MainMenu></MainMenu>
+            <MainMenu />
+            <ServicesMenuBlock />
         </main>
         <RightSidebar/>
         </div>

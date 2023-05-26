@@ -19,11 +19,17 @@
   &.BackgroundColorWhite {
     background-color: $white;
   }
+  &.BackgroundColorNone{
+    background-color: transparent;
+  }
   &.BackgroundColorOrange {
     background-color: $orange;
   }
   &.TextColorWhite {
     color:$white;
+  }
+  &.TextColorOrange {
+    color:$orange;
   }
   &.TextColorBlack {
     color:$black;
@@ -33,6 +39,9 @@
   }
   &.Border {
     border: 1px solid $darkGrey;
+  }
+  &.NoBorder {
+    border: none;
   }
   &.BorderRadiusSmall {
     border-radius: 5px;

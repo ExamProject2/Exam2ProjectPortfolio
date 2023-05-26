@@ -9,10 +9,12 @@ function Button (props){
         <button className={cn('AppButton', {
             'BackgroundColorWhite': backgrndColor === 'white',
             'BackgroundColorOrange': backgrndColor === 'orange',
+            'BackgroundColorNone': backgrndColor === 'none',
             'TextColorWhite': textColor === 'white',
             'TextColorBlack': textColor === 'black',
+            'TextColorOrange': textColor === 'orange',
             'Shadow': shadow,
-            'Border': border,
+            'NoBorder': border === 'noBorder',
             'BorderRadiusSmall': borderRadius === 'small',
             'BorderRadiusBig': borderRadius === 'big',
             'SizeSmall': size === 'small',
@@ -24,13 +26,13 @@ function Button (props){
 }
 
 Button.propTypes = {
-    backgrndColor:PropTypes.oneOf(['white', 'orange']),
-    textColor: PropTypes.oneOf(['white', 'black']),
+    backgrndColor:PropTypes.oneOf(['white', 'orange', 'none']),
+    textColor: PropTypes.oneOf(['white', 'black', 'orange']),
     shadow: PropTypes.bool,
     borderRadius: PropTypes.oneOf(['none', 'small', 'big']),
     title: PropTypes.string,
     icon: PropTypes.string,
-    border: PropTypes.bool,
+    border: PropTypes.string,
     size: PropTypes.oneOf(['small', 'medium', 'big']),
 }
 Button.defaultProps = {
@@ -39,7 +41,6 @@ Button.defaultProps = {
     shadow: false,
     borderRadius:'none',
     icon: null,
-    border: false,
     size: 'medium',
 }
 

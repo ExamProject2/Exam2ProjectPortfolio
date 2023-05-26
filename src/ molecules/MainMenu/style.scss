@@ -7,7 +7,11 @@
   background-color: $white;
 
   .MainTitleDiv{
-    padding: 90px 410px 60px 256px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 60px;
   }
 
   .MainTitleDiv2{
