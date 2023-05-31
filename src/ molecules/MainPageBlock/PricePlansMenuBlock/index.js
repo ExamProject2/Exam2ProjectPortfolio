@@ -1,13 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 import BaseMainPageBlock from "../BaseMainPageBlock";
+import PricePlansMenuBoxBlock from "../../PricePlansMenuBoxBlock";
 import './style.scss';
 
-function PricePlansMenuBlock(){
+const services = {
+    list:[{
+        serviceName:'UI Design',
+    },
+        {
+            serviceName:'Web Development',
+        },
+        
+    ]
+}
+
+function PricePlansMenuBlock(service){
     return(
         <BaseMainPageBlock title='Price Plans' text='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum'>
-            {
-
+            {<>
+                <PricePlansMenuBoxBlock title='Silver' text='For most businesses that want to optimize web queries' price='$0.00' services={services.list}/>
+                <PricePlansMenuBoxBlock title='Gold' text='For most businesses that want to optimize web queries' price='$50.00' services={services.list}/>
+                <PricePlansMenuBoxBlock title='Dimond' text='For most businesses that want to optimize web queries' price='$80.00' services={services.list}/>
+            </>
             }
         </BaseMainPageBlock>
     )

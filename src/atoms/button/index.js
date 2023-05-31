@@ -21,7 +21,7 @@ function Button (props){
             'SizeMedium': size === 'medium',
             'SizeBig': size === 'big',
         })}
-                {...baseProps}> {title} </button>
+                {...baseProps}> {title}</button>
 )
 }
 
@@ -31,7 +31,6 @@ Button.propTypes = {
     shadow: PropTypes.bool,
     borderRadius: PropTypes.oneOf(['none', 'small', 'big']),
     title: PropTypes.string,
-    icon: PropTypes.string,
     border: PropTypes.string,
     size: PropTypes.oneOf(['small', 'medium', 'big']),
 }
@@ -40,7 +39,6 @@ Button.defaultProps = {
     textColor:'black',
     shadow: false,
     borderRadius:'none',
-    icon: null,
     size: 'medium',
 }
 

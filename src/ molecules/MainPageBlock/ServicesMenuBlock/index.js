@@ -9,7 +9,6 @@ import {ReactComponent as MicrophoneIcon} from '../../../atoms/icons/Microphone.
 import {ReactComponent as PhotographerIcon} from '../../../atoms/icons/Photographer.svg'
 import Button from "../../../atoms/button";
 import './style.scss';
-import Typography from "../../../atoms/Typography";
 
 function ServicesMenuBlock(){
     return(

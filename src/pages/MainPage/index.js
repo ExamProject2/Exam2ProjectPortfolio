@@ -9,6 +9,7 @@ import LeftSidebar from "../leftSidebar";
 import MainMenu from "../../ molecules/MainMenu";
 import ServicesMenuBlock from "../../ molecules/MainPageBlock/ServicesMenuBlock";
 import './style.scss';
+import PricePlansMenuBlock from "../../ molecules/MainPageBlock/PricePlansMenuBlock";
 
 class EventLog {
     constructor(target, eventType) {
@@ -23,6 +24,7 @@ class EventLog {
         return this.target;
     }
 }
+
 function MainPage(){
     const onGetButtonClickHw = () => {
         axios.post('http://localhost:8001/hw/event-log', [
@@ -146,11 +148,14 @@ function MainPage(){
     };
 
 
+
+
     return(<div className='MainPageDiv'>
         <LeftSidebar/>
         <main>
             <MainMenu />
             <ServicesMenuBlock />
+            <PricePlansMenuBlock />
         </main>
         <RightSidebar/>
         </div>
