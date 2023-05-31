@@ -9,7 +9,7 @@ function ServicesMenuBoxBlock (props){
     const {icon, boxTitle, boxText, children} = props;
     return(
         <div className='ServicesMenuBoxBlock'>
-            <img src={icon}/>
+            {icon}
             <Typography color='black' fontWeight='body2' variant='title4'>{boxTitle}</Typography>
             <Typography variant='title3'>{boxText}</Typography>
             {children}

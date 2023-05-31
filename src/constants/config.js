@@ -1,0 +1,1 @@
+export const STATISTIC_SERVICE = process.env.REACT_APP_STATISTIC_SERVICE;

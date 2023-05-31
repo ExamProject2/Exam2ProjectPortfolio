@@ -17,11 +17,10 @@ PricePlansMenuBlock.propTypes = {
     title: PropTypes.string,
     skills:PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string,
-        percent: PropTypes.number
     })),
 }
 PricePlansMenuBlock.defaultProps = {
-    skills:[],
+
 }
 export default PricePlansMenuBlock;
 
