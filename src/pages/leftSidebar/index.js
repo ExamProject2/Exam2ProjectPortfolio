@@ -6,6 +6,8 @@ import ProfileBoxBlock from "../../atoms/ProfileBoxBlock";
 import InfoBoxBlock from "../../atoms/InfoBoxBlock";
 import SkillBoxBlock from "../../atoms/SkillBoxBlock/SkillBoxBlock";
 import ExtraSkillBoxBlock from "../../atoms/SkillBoxBlock/ExtraSkillBoxBlock";
+import Button from "../../atoms/button";
+import BaseSkillBoxBlock from "../../atoms/SkillBoxBlock/BaseSkillBoxBlock";
 
 const languages = {
     title:'Languages',
@@ -66,6 +68,11 @@ function LeftSidebar(){
             <SkillBoxBlock title={languages.title} skills={languages.list}/>
             <SkillBoxBlock title={skills.title} skills={skills.list}/>
             <ExtraSkillBoxBlock title={extraSkills.title} skills={extraSkills.list}/>
+            <BaseSkillBoxBlock>
+                <div className='LeftSidebarBtnDiv'>
+                <Button title={'DOWNLOAD CV'} border='noBorder' textColor='black' size='small'/>
+                </div>
+            </BaseSkillBoxBlock>
         </div>
 
     )

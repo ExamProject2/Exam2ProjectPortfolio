@@ -8,4 +8,10 @@
   background-color: $white;
   padding:0 40px;
   overflow-y: auto;
+
+  .LeftSidebarBtnDiv{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
 }

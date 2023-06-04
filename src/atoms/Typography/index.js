@@ -10,6 +10,7 @@ function Typography (props){
         'SizeTitle2': variant === 'title2',
         'SizeTitle3': variant === 'title3',
         'SizeTitle4': variant === 'title4',
+        'SizeTitle5': variant === 'title5',
         'FontWeightBody1': fontWeight === 'body1',
         'FontWeightBody2': fontWeight === 'body2',
         'FontWeightBody3': fontWeight === 'body3',

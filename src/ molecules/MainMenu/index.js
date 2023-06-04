@@ -19,7 +19,7 @@ function MainMenu(){
                     <Typography variant='title1' fontWeight='body1' color='black'>Developer</Typography>
                 </div>
                 <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</Typography>
-                <Button borderRadius='small' border='noBorder' title='Hire me'>
+                <Button borderRadius='small' border='noBorder' title='HIRE ME'>
                 <ArrowIcon />
                 </Button>
             </div>
