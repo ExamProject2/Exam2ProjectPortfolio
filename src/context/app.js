@@ -2,6 +2,7 @@ import React, {useState, useEffect, createContext} from 'react';
 import {eventLoggerService} from "../service/logger";
 import axios from "axios";
 import EventLog from "../types/EventLog";
+import {STATISTIC_SERVICE} from "../constants/config";
 export const AppContext = createContext({
 
 });
@@ -12,7 +13,7 @@ function AppContextProvider (props) {
         document.querySelector('body').addEventListener('click', clickHandler);
         setInterval(() => {
                 setEventList((prevEventList) => {
-                    axios.post('http://localhost:8001/hw/file/get-as-array', prevEventList)
+                    axios.post( `${STATISTIC_SERVICE}/event`, prevEventList)
                         .then(function (response) {
                             // handle success
                             console.log(response);
