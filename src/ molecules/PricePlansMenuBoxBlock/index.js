@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cn from 'classnames';
 import './style.scss';
 import Typography from "../../atoms/Typography";
-import PricePlansMenuBlock from "../MainPageBlock/PricePlansMenuBlock";
+import PricePlansServiceRow from "./PricePlansServiceRow";
 
 function PricePlansMenuBoxBlock (props){
     const {title, price, text, services} = props;
@@ -16,7 +16,7 @@ function PricePlansMenuBoxBlock (props){
             </>
             <Typography variant='title3' color='lightGrey' fontWeight='body1'>{text}</Typography>
             <div className='PricePlansList'>
-                {services.map((serviceName, index) => (<PricePlansMenuBlock key={index} serviceName={services.serviceName}></PricePlansMenuBlock>))}
+                {services.map(({serviceName, status}, index) => (<PricePlansServiceRow key={index} title={serviceName} isActive={status}/>))}
             </div>
         </div>
     )
@@ -27,6 +27,7 @@ PricePlansMenuBoxBlock.propTypes = {
     text: PropTypes.string,
     services:PropTypes.arrayOf(PropTypes.shape({
         serviceName: PropTypes.string,
+        status: PropTypes.bool,
     })),
 }
 
