@@ -1,0 +1,18 @@
+@import '../../colors';
+.RecommendationsMenuBoxBlock{
+  background-color: $white;
+  padding:25px;
+
+  .StarsDiv{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 16px;
+  }
+  .CaptionDiv{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:18px;
+    padding-bottom:30px;
+  }
+}

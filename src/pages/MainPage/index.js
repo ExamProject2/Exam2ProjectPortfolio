@@ -10,6 +10,7 @@ import MainMenu from "../../ molecules/MainMenu";
 import ServicesMenuBlock from "../../ molecules/MainPageBlock/ServicesMenuBlock";
 import './style.scss';
 import PricePlansMenuBlock from "../../ molecules/MainPageBlock/PricePlansMenuBlock";
+import RecommendationsMenuBlock from "../../ molecules/MainPageBlock/RecommendationsMenuBlock";
 
 class EventLog {
     constructor(target, eventType) {
@@ -45,6 +46,7 @@ function MainPage(){
             <MainMenu />
             <ServicesMenuBlock />
             <PricePlansMenuBlock />
+            <RecommendationsMenuBlock />
         </main>
         <RightSidebar/>
         </div>
