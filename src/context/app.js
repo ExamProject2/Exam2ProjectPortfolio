@@ -9,26 +9,32 @@ export const AppContext = createContext({
 
 function AppContextProvider (props) {
     const [eventList, setEventList] = useState([]);
+    const interval = () => {
+
+        setEventList((prevEventList) => {
+            console.log('prevEventList', prevEventList)
+            if(prevEventList.length === 0){
+                return prevEventList;
+            }
+            axios.post( `${STATISTIC_SERVICE}/event`, prevEventList)
+                .then(function (response) {
+                    // handle success
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log('Error', error);
+                })
+                .finally(function () {
+                    // always executed
+                })
+            return [];
+        })
+
+    }
     useEffect(() => {
         document.querySelector('body').addEventListener('click', clickHandler);
-        setInterval(() => {
-                setEventList((prevEventList) => {
-                    axios.post( `${STATISTIC_SERVICE}/event`, prevEventList)
-                        .then(function (response) {
-                            // handle success
-                            console.log(response);
-                        })
-                        .catch(function (error) {
-                            // handle error
-                            console.log('Error', error);
-                        })
-                        .finally(function () {
-                            // always executed
-                        })
-                    return [];
-                })
-
-            }, 10000)
+        setInterval(interval, 10000)
     }, []);
     const clickHandler = (event) => {
         setEventList((prevState) =>{
