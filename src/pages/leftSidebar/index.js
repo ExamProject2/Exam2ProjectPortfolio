@@ -8,6 +8,7 @@ import SkillBoxBlock from "../../atoms/SkillBoxBlock/SkillBoxBlock";
 import ExtraSkillBoxBlock from "../../atoms/SkillBoxBlock/ExtraSkillBoxBlock";
 import Button from "../../atoms/button";
 import BaseSkillBoxBlock from "../../atoms/SkillBoxBlock/BaseSkillBoxBlock";
+import {ReactComponent as DownloadIcon} from '../../atoms/icons/Download.svg'
 
 const languages = {
     title:'Languages',
@@ -70,7 +71,9 @@ function LeftSidebar(){
             <ExtraSkillBoxBlock title={extraSkills.title} skills={extraSkills.list}/>
             <BaseSkillBoxBlock>
                 <div className='LeftSidebarBtnDiv'>
-                <Button title={'DOWNLOAD CV'} border='noBorder' textColor='black' size='small'/>
+                    <Button title={'DOWNLOAD CV'} border='noBorder' textColor='black' size='small'>
+                        <DownloadIcon/>
+                    </Button>
                 </div>
             </BaseSkillBoxBlock>
         </div>

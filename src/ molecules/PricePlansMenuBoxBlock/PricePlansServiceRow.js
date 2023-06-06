@@ -5,13 +5,14 @@ import './style.scss';
 import Typography from "../../atoms/Typography";
 import {ReactComponent as ActiveIcon} from "../../atoms/icons/Active.svg";
 import {ReactComponent as DisableIcon} from "../../atoms/icons/Close.svg";
+import Button from "../../atoms/button";
 
 function PricePlansServiceRow (props){
-    const {isActive, title} = props;
+    const {isActive, title, btnColor} = props;
     return(
         <div className='PricePlansServiceRow'>
             {isActive ? <ActiveIcon/> : <DisableIcon/>}
-            <Typography variant='title5' color={isActive ? 'black' : 'lightGrey'} fontWeight='body4'>{title}</Typography>
+            <Typography variant='title3' color={isActive ? 'black' : 'lightGrey'} fontWeight='body3'>{title}</Typography>
         </div>
     )
 }

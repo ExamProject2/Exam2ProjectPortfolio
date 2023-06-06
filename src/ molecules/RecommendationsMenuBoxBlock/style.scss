@@ -2,6 +2,8 @@
 .RecommendationsMenuBoxBlock{
   background-color: $white;
   padding:25px;
+  width: 310px;
+  height:320px;
 
   .StarsDiv{
     display: flex;
@@ -15,4 +17,15 @@
     gap:18px;
     padding-bottom:30px;
   }
+  .PersonalInfoDiv{
+    display: flex;
+    justify-content: space-between;
+
+    .InfoDiv{
+      display:flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+  }
+
 }

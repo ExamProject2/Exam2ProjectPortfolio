@@ -20,9 +20,9 @@ function RecommendationsMenuBoxBlock (props){
                 <Typography variant='title4' color='black' fontWeight='body2'>{title}</Typography>
                 <Typography variant='title3'>{text}</Typography>
             </div>
-            <div className=''>
+            <div className='PersonalInfoDiv'>
                 <img src={photo}/>
-                <div classname=''>
+                <div className='InfoDiv'>
                     <Typography variant='title4' color='black' fontWeight='body2'>{name}</Typography>
                     <Typography variant='title3'>{profession}</Typography>
                 </div>

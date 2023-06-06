@@ -1,17 +1,31 @@
+@import '../../colors';
 .PricePlansServiceRow{
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap:16px;
+  padding-top:16px;
 }
-
-.ServicesMenuBoxBlock{
-  padding-top:50px;
+.PricePlansMenuBoxBlock{
+  background-color: $white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 54px 30px 25px 30px;
+  width:310px;
+  //height:610px;
 
   .PriceDiv{
     display:flex;
-    padding:20px 0 10px 0;
+    gap:10px;
+    padding: 20px 82px 8px 82px;
   }
+
+  .PricePlansList{
+    padding-bottom: 20px;
+  }
+
 }
 
