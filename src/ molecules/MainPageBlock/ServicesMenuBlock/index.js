@@ -26,12 +26,13 @@ function ServicesMenuBlock(){
                     <ServicesMenuBoxBlock boxTitle='Photography' boxText='Portrait, Product Photography' icon={<PhotographerIcon/>}></ServicesMenuBoxBlock>
                     <ServicesMenuBoxBlock boxTitle='Advertising' boxText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. '>
                         <Button
+                            id={'order_btn'}
                             title='ORDER NOW'
                             border='noBorder'
                             backgrndColor='none'
                             textColor='orange'
                             size='small'
-                            stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}
+                            stat={statistic.has('order_btn') ? statistic.get('order_btn') : undefined}
                         />
                     </ServicesMenuBoxBlock>
                 </div>

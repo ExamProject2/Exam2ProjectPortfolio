@@ -64,33 +64,36 @@ function PricePlansMenuBlock(service){
             <div className='PricePlansBoxesDiv'>
                 <PricePlansMenuBoxBlock title='Silver' text='For most businesses that want to optimize web queries' price='$0.00' services={services.SilverList}>
                     <Button
+                        id={'order_btn_2'}
                         title='ORDER NOW'
                         shadow='shadow'
                         border='noBorder'
                         backgrndColor='white'
                         borderRadius='big'
                         size='small'
-                        stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}/>
+                        stat={statistic.has('order_btn_2') ? statistic.get('order_btn_2') : undefined}/>
                 </PricePlansMenuBoxBlock>
                 <PricePlansMenuBoxBlock title='Gold' text='For most businesses that want to optimize web queries' price='$50.00' services={services.GoldList}>
                     <Button
+                        id={'order_btn_3'}
                         title='ORDER NOW'
                         shadow='shadow'
                         border='noBorder'
                         backgrndColor='orange'
                         borderRadius='big'
                         size='small'
-                        stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}/>
+                        stat={statistic.has('order_btn_3') ? statistic.get('order_btn_3') : undefined}/>
                 </PricePlansMenuBoxBlock>
                 <PricePlansMenuBoxBlock title='Diamond' text='For most businesses that want to optimize web queries' price='$80.00' services={services.DiamondList}>
                     <Button
+                        id={'order_btn_4'}
                         title='ORDER NOW'
                         shadow='shadow'
                         border='noBorder'
                         backgrndColor='white'
                         borderRadius='big'
                         size='small'
-                        stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}/>
+                        stat={statistic.has('order_btn_4') ? statistic.get('order_btn_4') : undefined}/>
                 </PricePlansMenuBoxBlock>
             </div>
         </BaseMainPageBlock>

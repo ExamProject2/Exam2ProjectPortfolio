@@ -40,11 +40,12 @@ function RightSidebar(){
                 <div className='Circle'><ContactIcon/></div>
                 <div className='StatisticBtnDiv'>
                     <Button
+                        id={'stat_btn'}
                         border='noBorder'
                         borderRadius='big'
                         backgrndColor='orange'
                         onClick={getStatistic}
-                        stat = {statistic.has('download_btn') ? statistic.get('download_btn') : undefined}>
+                        stat = {statistic.has('stat_btn') ? statistic.get('stat_btn') : undefined}>
                         <StatisticIcon/>
                     </Button>
                 </div>

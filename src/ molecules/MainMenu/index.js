@@ -22,10 +22,11 @@ function MainMenu(){
                 </div>
                 <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</Typography>
                 <Button
+                    id={'hire_btn'}
                     borderRadius='small'
                     border='noBorder'
                     title='HIRE ME'
-                    stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}>
+                    stat={statistic.has('hire_btn') ? statistic.get('hire_btn') : undefined}>
                 <ArrowIcon />
                 </Button>
             </div>
