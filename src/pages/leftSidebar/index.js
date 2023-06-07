@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import PropTypes from "prop-types";
 import './style.scss';
 import cn from 'classnames';
@@ -9,6 +9,7 @@ import ExtraSkillBoxBlock from "../../atoms/SkillBoxBlock/ExtraSkillBoxBlock";
 import Button from "../../atoms/button";
 import BaseSkillBoxBlock from "../../atoms/SkillBoxBlock/BaseSkillBoxBlock";
 import {ReactComponent as DownloadIcon} from '../../atoms/icons/Download.svg'
+import {AppContext} from "../../context/app";
 
 const languages = {
     title:'Languages',
@@ -62,6 +63,7 @@ const extraSkills = {
 }
 
 function LeftSidebar(){
+    const {statistic} = useContext(AppContext);
     return(
         <div className='LeftSidebarDiv'>
            <ProfileBoxBlock/>
@@ -71,7 +73,14 @@ function LeftSidebar(){
             <ExtraSkillBoxBlock title={extraSkills.title} skills={extraSkills.list}/>
             <BaseSkillBoxBlock>
                 <div className='LeftSidebarBtnDiv'>
-                    <Button title={'DOWNLOAD CV'} border='noBorder' textColor='black' size='small'>
+                    <Button
+                        id='download_btn'
+                        title={'DOWNLOAD CV'}
+                        border='noBorder'
+                        textColor='black'
+                        size='small'
+                        stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}
+                    >
                         <DownloadIcon/>
                     </Button>
                 </div>

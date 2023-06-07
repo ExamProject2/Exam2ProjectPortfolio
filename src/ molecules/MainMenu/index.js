@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import PropTypes from "prop-types";
 import cn from 'classnames';
 import Typography from "../../atoms/Typography";
@@ -8,8 +8,10 @@ import YourPhoto from '../../atoms/icons/Your Image 1.png'
 import './style.scss';
 import ProfilePhoto from "../../atoms/icons/Profile.png";
 import {ReactComponent as ArrowIcon} from '../../atoms/icons/arrow.svg';
+import {AppContext} from "../../context/app";
 
 function MainMenu(){
+    const {statistic} = useContext(AppContext);
     return(//<Paper color='white'>
         <div className='MainMenuDiv'>
             <div className='MainTitleDiv'>
@@ -19,7 +21,11 @@ function MainMenu(){
                     <Typography variant='title1' fontWeight='body1' color='black'>Developer</Typography>
                 </div>
                 <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</Typography>
-                <Button borderRadius='small' border='noBorder' title='HIRE ME'>
+                <Button
+                    borderRadius='small'
+                    border='noBorder'
+                    title='HIRE ME'
+                    stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}>
                 <ArrowIcon />
                 </Button>
             </div>

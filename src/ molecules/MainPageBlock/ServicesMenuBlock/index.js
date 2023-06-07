@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import PropTypes from "prop-types";
 import BaseMainPageBlock from "../BaseMainPageBlock";
 import ServicesMenuBoxBlock from "../../ServicesMenuBoxBlock";
@@ -9,8 +9,10 @@ import {ReactComponent as MicrophoneIcon} from '../../../atoms/icons/Microphone.
 import {ReactComponent as PhotographerIcon} from '../../../atoms/icons/Photographer.svg'
 import Button from "../../../atoms/button";
 import './style.scss';
+import {AppContext} from "../../../context/app";
 
 function ServicesMenuBlock(){
+    const {statistic} = useContext(AppContext);
     return(
         <BaseMainPageBlock title='My Services' text='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum'>
             {<>
@@ -22,7 +24,16 @@ function ServicesMenuBlock(){
                 <div className='ServicesMenuBlockDiv'>
                     <ServicesMenuBoxBlock boxTitle='Game Design' boxText='Character Design, Props & Objects' icon={<GamingComputerIcon/>}></ServicesMenuBoxBlock>
                     <ServicesMenuBoxBlock boxTitle='Photography' boxText='Portrait, Product Photography' icon={<PhotographerIcon/>}></ServicesMenuBoxBlock>
-                    <ServicesMenuBoxBlock boxTitle='Advertising' boxText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. '><Button title='ORDER NOW' border='noBorder' backgrndColor='none' textColor='orange' size='small'></Button></ServicesMenuBoxBlock>
+                    <ServicesMenuBoxBlock boxTitle='Advertising' boxText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. '>
+                        <Button
+                            title='ORDER NOW'
+                            border='noBorder'
+                            backgrndColor='none'
+                            textColor='orange'
+                            size='small'
+                            stat={statistic.has('download_btn') ? statistic.get('download_btn') : undefined}
+                        />
+                    </ServicesMenuBoxBlock>
                 </div>
             </>
             }
