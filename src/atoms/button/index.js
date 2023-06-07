@@ -53,7 +53,7 @@ Button.defaultProps = {
     stat:{
         target:null,
         eventType:null,
-        count:10
+        count: null
     },
 }
 
