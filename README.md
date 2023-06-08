@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**Проект зі збору статистики кліків по кнопках.**
+
+Цей проект на React дозволяє відстежувати кліки на кнопках веб-сторінки та збирати статистику для подальшого аналізу.
+Для запитів на сервер застосовується axios.
+
+Використання:
+При натисканні на помаранчеву кнопку в правом меню, з'являється статистика кліків.
+
+Встановлення:
+1) Запустити команду `'npm install'`
+2) Запустіть `'npm start'`
+3) Створити environment variable (в файлі .env.dist)
+
+
+
+
